@@ -13,6 +13,12 @@
 		630407E62202C0E50015F9AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630407E52202C0E50015F9AE /* Assets.xcassets */; };
 		630407E92202C0E50015F9AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630407E72202C0E50015F9AE /* LaunchScreen.storyboard */; };
 		630407EC2202C0E50015F9AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 630407EB2202C0E50015F9AE /* main.m */; };
+		630408012202C1170015F9AE /* UTCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 630407F32202C1170015F9AE /* UTCClient.m */; };
+		630408022202C1170015F9AE /* XTSHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 630407F42202C1170015F9AE /* XTSHttpRequest.m */; };
+		630408032202C1170015F9AE /* UTCURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 630407F52202C1170015F9AE /* UTCURLProtocol.m */; };
+		630408042202C1170015F9AE /* UTCPTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 630407F82202C1170015F9AE /* UTCPTUSBHub.m */; };
+		630408052202C1170015F9AE /* UTCPTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 630407FD2202C1170015F9AE /* UTCPTChannel.m */; };
+		630408062202C1170015F9AE /* UTCPTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 630407FE2202C1170015F9AE /* UTCPTProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,19 @@
 		630407E82202C0E50015F9AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		630407EA2202C0E50015F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		630407EB2202C0E50015F9AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		630407F32202C1170015F9AE /* UTCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTCClient.m; sourceTree = "<group>"; };
+		630407F42202C1170015F9AE /* XTSHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSHttpRequest.m; sourceTree = "<group>"; };
+		630407F52202C1170015F9AE /* UTCURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTCURLProtocol.m; sourceTree = "<group>"; };
+		630407F62202C1170015F9AE /* UTCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTCClient.h; sourceTree = "<group>"; };
+		630407F82202C1170015F9AE /* UTCPTUSBHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTCPTUSBHub.m; sourceTree = "<group>"; };
+		630407F92202C1170015F9AE /* UTCPTPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTCPTPrivate.h; sourceTree = "<group>"; };
+		630407FA2202C1170015F9AE /* UTCPTProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTCPTProtocol.h; sourceTree = "<group>"; };
+		630407FB2202C1170015F9AE /* UTCPTChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTCPTChannel.h; sourceTree = "<group>"; };
+		630407FC2202C1170015F9AE /* UTCPTUSBHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTCPTUSBHub.h; sourceTree = "<group>"; };
+		630407FD2202C1170015F9AE /* UTCPTChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTCPTChannel.m; sourceTree = "<group>"; };
+		630407FE2202C1170015F9AE /* UTCPTProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTCPTProtocol.m; sourceTree = "<group>"; };
+		630407FF2202C1170015F9AE /* XTSHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSHttpRequest.h; sourceTree = "<group>"; };
+		630408002202C1170015F9AE /* UTCURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTCURLProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +61,7 @@
 		630407D02202C0E30015F9AE = {
 			isa = PBXGroup;
 			children = (
+				630407F22202C1170015F9AE /* Sources */,
 				630407DB2202C0E30015F9AE /* engine-ios-debugger-support */,
 				630407DA2202C0E30015F9AE /* Products */,
 			);
@@ -69,6 +89,34 @@
 				630407EB2202C0E50015F9AE /* main.m */,
 			);
 			path = "engine-ios-debugger-support";
+			sourceTree = "<group>";
+		};
+		630407F22202C1170015F9AE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				630407F72202C1170015F9AE /* peertalk */,
+				630407F32202C1170015F9AE /* UTCClient.m */,
+				630407FF2202C1170015F9AE /* XTSHttpRequest.h */,
+				630407F42202C1170015F9AE /* XTSHttpRequest.m */,
+				630407F52202C1170015F9AE /* UTCURLProtocol.m */,
+				630407F62202C1170015F9AE /* UTCClient.h */,
+				630408002202C1170015F9AE /* UTCURLProtocol.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		630407F72202C1170015F9AE /* peertalk */ = {
+			isa = PBXGroup;
+			children = (
+				630407F82202C1170015F9AE /* UTCPTUSBHub.m */,
+				630407F92202C1170015F9AE /* UTCPTPrivate.h */,
+				630407FA2202C1170015F9AE /* UTCPTProtocol.h */,
+				630407FB2202C1170015F9AE /* UTCPTChannel.h */,
+				630407FC2202C1170015F9AE /* UTCPTUSBHub.h */,
+				630407FD2202C1170015F9AE /* UTCPTChannel.m */,
+				630407FE2202C1170015F9AE /* UTCPTProtocol.m */,
+			);
+			path = peertalk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +190,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				630407E12202C0E30015F9AE /* ViewController.m in Sources */,
+				630408012202C1170015F9AE /* UTCClient.m in Sources */,
+				630408052202C1170015F9AE /* UTCPTChannel.m in Sources */,
 				630407EC2202C0E50015F9AE /* main.m in Sources */,
+				630408042202C1170015F9AE /* UTCPTUSBHub.m in Sources */,
+				630408062202C1170015F9AE /* UTCPTProtocol.m in Sources */,
 				630407DE2202C0E30015F9AE /* AppDelegate.m in Sources */,
+				630408032202C1170015F9AE /* UTCURLProtocol.m in Sources */,
+				630408022202C1170015F9AE /* XTSHttpRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 544P5CH38C;
 				INFOPLIST_FILE = "engine-ios-debugger-support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 544P5CH38C;
 				INFOPLIST_FILE = "engine-ios-debugger-support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
