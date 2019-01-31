@@ -66,7 +66,7 @@ static const uint8_t kUserInfoKey;
 
 
 + (UTCPTChannel*)channelWithDelegate:(id<UTCPTChannelDelegate>)delegate {
-  return [[UTCPTChannel alloc] initWithProtocol:[UTCPTProtocol sharedProtocolForQueue:dispatch_get_main_queue()] delegate:delegate];
+  return [[UTCPTChannel alloc] initWithProtocol:[UTCPTProtocol sharedProtocolForQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)] delegate:delegate];
 }
 
 
@@ -86,7 +86,7 @@ static const uint8_t kUserInfoKey;
 
 
 - (id)init {
-  return [self initWithProtocol:[UTCPTProtocol sharedProtocolForQueue:dispatch_get_main_queue()]];
+  return [self initWithProtocol:[UTCPTProtocol sharedProtocolForQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)]];
 }
 
 
