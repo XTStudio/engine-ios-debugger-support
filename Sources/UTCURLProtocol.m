@@ -66,7 +66,22 @@ static NSArray *targets;
 }
 
 + (NSURLRequest *)canonicalRequestForRequest:(NSURLRequest *)request {
-    return request;
+    NSMutableURLRequest *req = [request mutableCopy];
+    if (req.HTTPBodyStream != nil) {
+        uint8_t d[1024] = {0};
+        NSInputStream *stream = req.HTTPBodyStream;
+        NSMutableData *data = [[NSMutableData alloc] init];
+        [stream open];
+        while ([stream hasBytesAvailable]) {
+            NSInteger len = [stream read:d maxLength:1024];
+            if (len > 0 && stream.streamError == nil) {
+                [data appendBytes:(void *)d length:len];
+            }
+        }
+        req.HTTPBody = [data copy];
+        [stream close];
+    }
+    return [req copy];
 }
 
 - (void)startLoading {
